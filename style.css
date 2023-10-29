@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+
+.navbar {
+    background-color: transparent;
+    transition: .5s;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-scroll {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.nav-scroll .navbar-brand {
+    color: #222;
+}
+
+.nav-scroll .nav-link {
+    color: #222;
+}
+
+.nav-scroll .nav-link:hover {
+    color: #656565;
+}
+
+
+
+
+.bg-img-1 {
+    background-image: url('img/candi_brahu.jpg');
+}
+
+.bg-img-2 {
+    background-image: url('img/candi_tikus.jpg');
+}
+
+.bg-img-3 {
+    background-image: url('img/kolam_segaran.jpg');
+}
+
+.carousel-item {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    bottom: 32%;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.carousel-caption p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-block-end: 1rem;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+
+
+.sejarah-text {
+    font-size: 18px;
+}
+
+
+
+.tempat-wisata {
+    background-color: #ce3131;
+}
+
+
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.caption {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.thumbnail:hover {
+    transform: translateY(-2px);
+    transition: .5s ease;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+    border-radius: 5px;
+}
+
+
+
+.footer .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: inline-flex;
+    justify-content: end;
+    gap: 1.5rem;
+}
+
+.social-media i {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        background-color: #fff;
+    }
+
+    .navbar-brand {
+        color: #222;
+    }
+
+    .nav-link {
+        color: #222;
+    }
+
+    .carousel-caption {
+        bottom: 35%;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #fff;
+    }
+
+    .navbar-brand {
+        color: #222;
+    }
+
+    .nav-link {
+        color: #222;
+    }
+
+    .carousel-caption {
+        bottom: 38%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        bottom: 35%;
+    }
+
+    .footer .top-footer {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer .logo {
+        margin-block-end: 1rem;
+    }
+}
